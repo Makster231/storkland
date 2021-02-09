@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 3px 0px 1px #d33c5b;
+  transition: 0.3s ease;
+  cursor: pointer;
+  height: 38px;
+  width: 100%;
+  line-height: 38px;
+  background-color: $red;
+  color: $white;
+  text-align: center;
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: none;
+    background-color: darken($red, 15%);
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: darken($red, 100%);
+    transition: 0s;
+  }
+}
