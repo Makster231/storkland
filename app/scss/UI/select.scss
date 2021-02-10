@@ -1,0 +1,76 @@
+.select-custom {
+  position: relative;
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAMAAACXIvXeAAAAAXNSR0IB2cksfwAAAJZQTFRFAAAA////9vb27+/v6Ofn6+vr8/LzMSorOzc4QAAAAAAAHg8P5eXlPTk6LioqCAgIMS0uNDExKCUnCQkJBAEBLSkrLCcog4GBMCstHAYJYFtcJiAhfXt8BQUFOzc4JCAhUU9PZmJjBgIClZKTHRAS4eDgYFxdFhQWMiUla2hpLA0Rt7a2HwUHiIiJ2djYoJ6fGRQUBAQEXvikPQAAADJ0Uk5TAP////////HtGgUO///tEv7/8mFM6Pj/+k/07/sw493x/23/Yf/9cxX7O/+N////aD1kO9n7AAAAu0lEQVR4nF3Q1xKDIBBA0aWaACr2HjU9pv//z8U2sdzh6QwzLAsAIIrdrhAwaxtQFdgLMTixVkJYINZiJM1K9Pl89P2ZUBNzp74d/ZkQZmLs1B8Ab+9dDaI0oZoxU0UXCKP8ERJ+wO2hMcMxaISeDkV9/I2ZBZcIcXOUNmoB7POXoxYiQ3bHCxHeDU2RuB3HdvkEadKtJ0n/xDLZzSyz/1vK7bcivtV4iVTNsBXpnnDfyZXDV+1yM1Ze4QdjhwvIUXUm8AAAAABJRU5ErkJggg=="),
+    default;
+
+  > li {
+    z-index: 999;
+    position: relative;
+    background: $white;
+    padding: 16px 0;
+    width: 100%;
+    display: block;
+    border: 1px solid $blue;
+    border-radius: 25px;
+    text-align: center;
+
+    &:after {
+      position: absolute;
+      content: "";
+      right: 16px;
+      top: calc(50% - 3px);
+      width: 9px;
+      height: 7px;
+      background-image: url(../../images/icon-chevron-down.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: 0.3s ease;
+    }
+  }
+
+  ul {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: 0.3s ease;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $white !important;
+    border-radius: 0 0 25px 25px;
+    li {
+      background-color: $blue;
+      color: $white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+
+      &:first-of-type {
+        padding-top: 35px;
+        margin-top: -25px;
+      }
+
+      &:last-of-type {
+        border-radius: 0 0 25px 25px;
+      }
+
+      &:hover {
+        background-color: darken($blue, 20%);
+      }
+    }
+  }
+
+  &:hover {
+    > li {
+      &:after {
+        transform: scale(1, -1);
+      }
+    }
+    ul {
+      transform: scaleY(1);
+    }
+  }
+}

@@ -20,6 +20,7 @@
 :root {
   --swiper-theme-color: #007aff;
 }
+.swiper-container-modal,
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -494,6 +495,7 @@ button.swiper-pagination-bullet {
   }
 }
 /* a11y */
+.swiper-container-modal .swiper-notification,
 .swiper-container .swiper-notification {
   position: absolute;
   left: 0;

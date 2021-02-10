@@ -22,8 +22,19 @@ body {
   line-height: 1;
   color: $black;
   text-align: center;
+  transition: 0.3s ease;
 
   &::placeholder {
     color: #c8c8c8;
   }
+
+  &:hover,
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $blue;
+  }
+}
+
+.text-bold {
+  font-weight: bold !important;
 }
