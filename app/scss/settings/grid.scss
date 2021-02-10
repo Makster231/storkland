@@ -34,6 +34,18 @@
     }
 }
 
+.column-md {
+    @media (max-width: 960px) {
+        flex-direction: column;
+    }
+}
+
+.row-md {
+    @media (max-width: 960px) {
+        flex-direction: row;
+    }
+}
+
 .justify-content-center-md {
     @media (max-width: 960px) {
         justify-content: center;
@@ -42,4 +54,8 @@
 
 .mt-2 {
     margin-top: 16px;
+}
+
+.align-items-start {
+    align-items: flex-start;
 }

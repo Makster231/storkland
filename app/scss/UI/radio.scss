@@ -1,0 +1,35 @@
+.radio_btn {
+    cursor: pointer;
+    margin-bottom: 10px;
+    input[type=radio] {
+        display: none;
+        &:checked+span:before {
+            background: url(../../images/radion_btn_selected.png) 0 0 no-repeat !important;
+        }
+    }
+    label {
+        cursor: pointer;
+    }
+    span {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 0;
+        line-height: 18px;
+        user-select: none;
+        cursor: pointer;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-size: contain !important;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            background: url(../../images/radion_btn.png) 0 0 no-repeat;
+        }
+    }
+}

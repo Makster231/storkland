@@ -2,6 +2,235 @@
 
 <main class="main-page order">
 
+    <div class="container order_container">
+
+
+        <form class="order_form">
+
+            <div class="order_form-header">
+                <h3>
+                    Ваши данные
+
+                    <span>1</span>
+                </h3>
+
+                <div class="row align-items-center column-md">
+
+                    <div class="form-control">
+                        <label for="1">Ваше ФИО</label>
+                        <input type="text" class="input-text">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="1">Ваш телефон</label>
+                        <input type="text" class="input-text">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="1">Ваш email</label>
+                        <input type="text" class="input-text">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="order_form-body">
+                <div class="row align-items-start  column-md">
+                    <div class="col-4 column">
+                        <div class="order_form-body--left">
+                            <h3>
+                                Доставка
+
+                                <span>2</span>
+                            </h3>
+
+                            <div class="row align-items-center">
+
+                                <div class="form-control">
+                                    <label for="1">Ваш адрес</label>
+                                    <input type="text" class="input-text">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="order_form-body--left">
+                            <h3>
+                                Оплата
+
+                                <span>4</span>
+                            </h3>
+
+                            <div class="row align-items-center">
+
+                                <div class="form-control radio_btn">
+                                    <input id="order_cash" type="radio" name="order_payment">
+                                    <span></span>
+                                    <label for="order_cash">Наличными</label>
+                                </div>
+
+                                <div class="form-control radio_btn">
+                                    <input id="order_cards" type="radio" name="order_payment" checked>
+                                    <span></span>
+                                    <label for="order_cards"><img src="./images/order_cards.png" alt="Image"></label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="order_form-body--left">
+                            <h3>
+                                Примечания к заказу
+
+                                <span>3</span>
+                            </h3>
+
+                            <div class="column align-items-center">
+
+                                <div class="form-control">
+                                    <textarea class="input-text" rows="3"></textarea>
+                                </div>
+
+                                <div class="row align-items-center column-md">
+                                    <button type="button" class="btn">
+                                        Оформить заказ
+                                    </button>
+
+                                    <a href="#">
+                                        Продолжить покупки
+                                    </a>
+                                </div>
+
+                                <p>
+                                    Нажимая на кнопку, я принимаю <a href="#" class="text-underline">условия Политики конфиденциальности</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+
+        <div class="order_aside">
+
+            <div class="order_aside-title row align-items-center">
+
+                <h3>
+                    Данные о заказе
+                </h3>
+
+                <img src="./images/order_aside_icon.png" alt="Icon">
+            </div>
+
+            <ul class="order_items">
+                <li class="order_items-item">
+                    <div class="order_items-item--media">
+                        <img src="./images/order_aside_img_1.png" alt="Image">
+                    </div>
+
+                    <div class="order_items-item--content">
+                        <p>
+                            Трехколеный велосипед Formula3
+                        </p>
+
+                        <p>
+                            650Р Х 1
+                        </p>
+                    </div>
+                </li>
+                <li class="order_items-item">
+                    <div class="order_items-item--media">
+                        <img src="./images/order_aside_img_1.png" alt="Image">
+                    </div>
+
+                    <div class="order_items-item--content">
+                        <p>
+                            Трехколеный велосипед Formula3
+                        </p>
+
+                        <p>
+                            650Р Х 1
+                        </p>
+                    </div>
+                </li>
+                <li class="order_items-item">
+                    <div class="order_items-item--media">
+                        <img src="./images/order_aside_img_1.png" alt="Image">
+                    </div>
+
+                    <div class="order_items-item--content">
+                        <p>
+                            Трехколеный велосипед Formula3
+                        </p>
+
+                        <p>
+                            650Р Х 1
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="order_aside-result">
+                <h3>
+                    Итого
+                </h3>
+
+                <div class="row align-items-center">
+                    <p>
+                        Стоимость доставки:
+                    </p>
+                    <p>
+                        0р
+                    </p>
+                </div>
+                <div class="row align-items-center">
+                    <p>
+                        Скидка по купону:
+                    </p>
+                    <p>
+                        0р
+                    </p>
+                </div>
+                <div class="row align-items-center">
+                    <p>
+                        Общая стоимость:
+                    </p>
+                    <p>
+                        0р
+                    </p>
+                </div>
+            </div>
+
+            <div class="order_aside-review">
+                <h3>
+                    Вас плохо обслужили?
+                </h3>
+                <p>
+                    Звоните руководителю
+                </p>
+
+                <a href="tel:+7(921) 312-54-00">
+                    +7(921) 312-54-00
+                </a>
+
+                <p>
+                    или пишите
+                </p>
+
+                <img src="./images/order_aside_avatar.png" alt="Image">
+
+                <button class="btn" type="button">
+                    Письмо руководителю
+                </button>
+            </div>
+        </div>
+
+    </div>
+
 </main>
 
 @@include('../components/_footer-page.html') @@include('../components/_footer.html')
