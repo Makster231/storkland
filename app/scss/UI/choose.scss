@@ -1,0 +1,111 @@
+.choose_items {
+    padding-bottom: 50px;
+    h2 {
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        color: $black;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: #3e3e3e;
+        margin-bottom: 26px;
+        a {
+            font-weight: bold;
+            color: $blue;
+        }
+    }
+    >.btn {
+        margin-bottom: 55px;
+        max-width: 269px;
+        background-color: $blue;
+        box-shadow: 0 3px 0 1px #4ca6df;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 68px;
+        height: 68px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    &-blocks {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+        }
+        &--item {
+            width: 100%;
+            max-width: 100%;
+            padding: 24px 10px 17px;
+            border-radius: 10px;
+            margin-bottom: 27px;
+            border: 1px solid $blue;
+            position: relative;
+            @media (min-width: 640px) {
+                margin-left: 30px;
+                max-width: calc((100% / 2) - 16px);
+                &:nth-of-type(odd) {
+                    margin-left: 0;
+                }
+            }
+            @media (min-width: 960px) {
+                max-width: calc((100% / 4) - 23px);
+                &:nth-of-type(odd) {
+                    margin-left: 30px;
+                }
+                &:first-of-type {
+                    margin-left: 0;
+                }
+            }
+            .choose_items-item {
+                &--header {
+                    margin-bottom: 15px;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    >span {
+                        top: 20px;
+                        left: 0;
+                        position: absolute;
+                        border-radius: 0 5px 5px 0;
+                        background-color: $red;
+                        padding: 10px;
+                        text-align: center;
+                        color: $white;
+                        z-index: 5;
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                }
+                &--body {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    h3 {
+                        font-size: 18px;
+                        font-family: "Junegull" !important;
+                        color: #434343;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    .btn {
+                        font-size: 14px;
+                        line-height: 44px;
+                        height: 44px;
+                        background-color: $blue;
+                        box-shadow: none;
+                        &:hover {
+                            background-color: darken($blue, 20%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

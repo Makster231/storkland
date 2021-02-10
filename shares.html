@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>title</title>
     <style>
-      body {
+        body {
             opacity: 0;
         }
         
@@ -18,7 +19,7 @@
             }
         }
     </style>
-    <meta name="Keywords" content=""> 
+    <meta name="Keywords" content="">
     <meta name="Description" content="">
     <link href="./app/css/site.css" rel="stylesheet" />
     <!-- Favicons: -->
@@ -31,7 +32,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
@@ -40,283 +41,257 @@
     <meta name="msapplication-TileImage" content="./images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- /Favicons -->
-  </head>
-  <body class="js_body">
+</head>
 
-
-<div class="wrapper-page">
-  <header class="header js_header">
-    
-    <div class="header_container container">
-      <div class=" header_top">
-        <a href="/" class="header_top-logo">
-          <img src="./images/logo.png" alt="Logo">
-        </a>
-  
-       <div class="header_top-burger js_header_top-burger">
-
-        <div class="icon_burger-toggle">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 12H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3 6H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3 18H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-            
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="js_hidden">
-            <path d="M16.9502 7.04883L7.0507 16.9483" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7.0498 7.04883L16.9493 16.9483" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+<body class="js_body"> <div class="wrapper-page">
+    <header class="header js_header">
+        <div class="header_container container">
+            <div class=" header_top">
+                <a href="/" class="header_top-logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </a>
+                <div class="header_top-burger js_header_top-burger">
+                    <div class="icon_burger-toggle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 12H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3 6H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M3 18H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                   </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="js_hidden">
+                      <path d="M16.9502 7.04883L7.0507 16.9483" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7.0498 7.04883L16.9493 16.9483" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                   </svg>
+                    </div>
+                    <div class="header_top-phones">
+                        <img src="./images/icon-phone.png" alt="clock">
+                        <div class="">
+                            <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
+                            <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
+                        </div>
+                    </div>
+                    <div class="header_top-recall">
+                        <button type="button" class="btn" data-fancybox="" data-src="#modal_recall" data-touch="false">
+                   Обратный звонок
+                   </button>
+                    </div>
+                    <div class="header_top-time">
+                        <img src="./images/icon-clock.png" alt="clock">
+                        <p>
+                            Время работы
+                            <span class="text-danger">
+                      10<sup>00</sup> - 20<sup>00</sup>
+                      </span>
+                        </p>
+                    </div>
+                    <div class="header_top-bucket">
+                        <img src="./images/icon-bucket.png" alt="bucket">
+                        <p>
+                            Ваша корзина
+                            <span class="text-danger">
+                      Нет товаров
+                      </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <ul class=" header_menu">
+                <li class="js_active">
+                    <a href="#">
+                Главная
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                Каталог
+                </a>
+                </li>
+                <li>
+                    <p>
+                        Автокресла
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                    </ul>
+                    <span class="icon-svg">
+                   <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6">
+                         <path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/>
+                      </svg>
+                   </svg>
+                </span>
+                </li>
+                <li>
+                    <p>
+                        Коляски
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                    </ul>
+                    <span class="icon-svg">
+                   <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6">
+                         <path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/>
+                      </svg>
+                   </svg>
+                </span>
+                </li>
+                <li>
+                    <a href="#">
+                Весы
+                </a>
+                </li>
+                <li>
+                    <p>
+                        Условия
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                      один
+                      </a>
+                        </li>
+                    </ul>
+                    <span class="icon-svg">
+                   <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6">
+                         <path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/>
+                      </svg>
+                   </svg>
+                </span>
+                </li>
+                <li>
+                    <a href="#">
+                Контакты
+                </a>
+                </li>
+            </ul>
+            <div class=" header_content">
+                <h1>
+                    акции
+                </h1>
+                <ul class="header_content-breadcrumbs">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="js_active">
+                        <a href="#">Акции</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="header_top-phones">
-  
-          <img src="./images/icon-phone.png" alt="clock">
-          
-          <div class="">
-            <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
-            <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
-          </div>
-          
-        </div>
-  
-  
-        <div class="header_top-recall">
-          <button type="button" class="btn"  data-fancybox="" data-src="#modal_choose_small" data-touch="false">
-            Обратный звонок
-          </button>
-        </div>
-  
-  
-        <div class="header_top-time">
-  
-          <img src="./images/icon-clock.png" alt="clock">
-  
-          <p>
-            Время работы
-  
-            <span class="text-danger">
-              10<sup>00</sup> - 20<sup>00</sup>
-            </span>
-          </p>
-        </div>
-  
-  
-        <div class="header_top-bucket">
-  
-          <img src="./images/icon-bucket.png" alt="bucket">
-  
-          <p>
-            Ваша корзина
-  
-            <span class="text-danger">
-              Нет товаров
-            </span>
-          </p>
-        </div>
-       </div>
-      </div>
-  
-  
-      <ul class=" header_menu">
-        <li class="js_active">
-          <a href="#">
-            Главная
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Каталог
-          </a>
-        </li>
-        <li>
-          <p >
-            Автокресла
-          </p>
-          
-
-          <ul>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-          </ul>
-
-          <span class="icon-svg">
-            <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/></svg></svg>
-          </span>
-        </li>
-        <li>
-          <p >
-            Коляски
-          </p>
-          
-
-          <ul>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-          </ul>
-
-          <span class="icon-svg">
-            <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/></svg></svg>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            Весы
-          </a>
-        </li>
-        <li>
-          <p>
-            Условия
-          </p>
-
-
-          <ul>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              один
-             </a>
-            </li>
-          </ul>
-
-          <span class="icon-svg">
-            <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/></svg></svg>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            Контакты
-          </a>
-        </li>
-      </ul>
-  
-  
-      <div class=" header_content">
-        <h1>
-          акции
-        </h1>
-  
-        <ul class="header_content-breadcrumbs">
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li class="js_active">
-            <a href="#">Акции</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </header>
-
+    </header>
 
 <main class="main-page shares">
 
     <div class="container">
-        
+
         <div class="shares_blocks">
             <div class="shares_block">
                 <h3>
                     Дарим скидку 10% для держателей карты петербуржца
                 </h3>
-        
+
                 <div class="shares_block-card">
                     <div class="shares_block-card--content">
                         <h4>
                             Для держателей единой карты петербуржца
                         </h4>
-            
+
                         <p>
                             на весь заказ в нашем прокате
                         </p>
-            
-            
-                       <div class="row align-items-center">
+
+
+                        <div class="row align-items-center">
                             <div class="shares_block-percent">
                                 скидка 10%
                             </div>
-                
+
                             <p class="text-bold">
                                 Только до 31 декабря
                             </p>
-                       </div>
+                        </div>
                     </div>
-        
-        
+
+
                     <div class="shares_block-card--img">
                         <img src="./images/card_img.png" alt="IMAGE">
                     </div>
-        
+
                 </div>
-        
+
                 <p>
                     Для получения скидки необходимо оформить заказ через сайт указав ID вашей карты, и предъявить карту сотруднику проката при оформлении Вашего заказа.
                 </p>
-        
+
                 <span>
                     Акция действует: c 01.01.2020 по 31.12.2020
                 </span>
@@ -325,40 +300,40 @@
                 <h3>
                     Дарим скидку 10% для держателей карты петербуржца
                 </h3>
-        
+
                 <div class="shares_block-card">
                     <div class="shares_block-card--content">
                         <h4>
                             Для держателей единой карты петербуржца
                         </h4>
-            
+
                         <p>
                             на весь заказ в нашем прокате
                         </p>
-            
-            
-                       <div class="row align-items-center">
+
+
+                        <div class="row align-items-center">
                             <div class="shares_block-percent">
                                 скидка 10%
                             </div>
-                
+
                             <p class="text-bold">
                                 Только до 31 декабря
                             </p>
-                       </div>
+                        </div>
                     </div>
-        
-        
+
+
                     <div class="shares_block-card--img">
                         <img src="./images/card_img.png" alt="IMAGE">
                     </div>
-        
+
                 </div>
-        
+
                 <p>
                     Для получения скидки необходимо оформить заказ через сайт указав ID вашей карты, и предъявить карту сотруднику проката при оформлении Вашего заказа.
                 </p>
-        
+
                 <span>
                     Акция действует: c 01.01.2020 по 31.12.2020
                 </span>
@@ -367,40 +342,40 @@
                 <h3>
                     Дарим скидку 10% для держателей карты петербуржца
                 </h3>
-        
+
                 <div class="shares_block-card">
                     <div class="shares_block-card--content">
                         <h4>
                             Для держателей единой карты петербуржца
                         </h4>
-            
+
                         <p>
                             на весь заказ в нашем прокате
                         </p>
-            
-            
-                       <div class="row align-items-center">
+
+
+                        <div class="row align-items-center">
                             <div class="shares_block-percent">
                                 скидка 10%
                             </div>
-                
+
                             <p class="text-bold">
                                 Только до 31 декабря
                             </p>
-                       </div>
+                        </div>
                     </div>
-        
-        
+
+
                     <div class="shares_block-card--img">
                         <img src="./images/card_img.png" alt="IMAGE">
                     </div>
-        
+
                 </div>
-        
+
                 <p>
                     Для получения скидки необходимо оформить заказ через сайт указав ID вашей карты, и предъявить карту сотруднику проката при оформлении Вашего заказа.
                 </p>
-        
+
                 <span>
                     Акция действует: c 01.01.2020 по 31.12.2020
                 </span>
@@ -409,40 +384,40 @@
                 <h3>
                     Дарим скидку 10% для держателей карты петербуржца
                 </h3>
-        
+
                 <div class="shares_block-card">
                     <div class="shares_block-card--content">
                         <h4>
                             Для держателей единой карты петербуржца
                         </h4>
-            
+
                         <p>
                             на весь заказ в нашем прокате
                         </p>
-            
-            
-                       <div class="row align-items-center">
+
+
+                        <div class="row align-items-center">
                             <div class="shares_block-percent">
                                 скидка 10%
                             </div>
-                
+
                             <p class="text-bold">
                                 Только до 31 декабря
                             </p>
-                       </div>
+                        </div>
                     </div>
-        
-        
+
+
                     <div class="shares_block-card--img">
                         <img src="./images/card_img.png" alt="IMAGE">
                     </div>
-        
+
                 </div>
-        
+
                 <p>
                     Для получения скидки необходимо оформить заказ через сайт указав ID вашей карты, и предъявить карту сотруднику проката при оформлении Вашего заказа.
                 </p>
-        
+
                 <span>
                     Акция действует: c 01.01.2020 по 31.12.2020
                 </span>
@@ -475,7 +450,7 @@
         <a href="#">44</a>
     </li>
 
-    
+
     <a href="#" class="pagination_arrow-next">
         <span>
             следующая
@@ -486,32 +461,32 @@
 
 
         <div class="shares_delivery">
-                <h2>
-                    7 пунктов выдачи товара 
-                    <span>по Санкт-Петербургу и области</span>
-                </h2>
+            <h2>
+                7 пунктов выдачи товара
+                <span>по Санкт-Петербургу и области</span>
+            </h2>
 
-                <button type="button" class="btn">
+            <button type="button" class="btn">
                     Найти ближайший пункт
                 </button>
 
-                <img class="bg_img" src="./images/share_car_1.png" alt="CAR">
+            <img class="bg_img" src="./images/share_car_1.png" alt="CAR">
         </div>
 
 
-        <div class="shares_choose">
+        <div class="choose_items">
             <h2>
                 Мамы выбирают
             </h2>
 
             <p>
-                Наши детки растут не по годам, а по часам. Но как же быть, если ребенку постоянно нужно покупать различные товары на каждый возраст? Выход есть! АистЛандия поможет вам избежать лишних расходов. У нас вы можете <a href="#">арендовать детские товары в Санкт-Петербурге</a> по самой низкой цене.
+                Наши детки растут не по годам, а по часам. Но как же быть, если ребенку постоянно нужно покупать различные товары на каждый возраст? Выход есть! АистЛандия поможет вам избежать лишних расходов. У нас вы можете <a href="#">арендовать детские товары в Санкт-Петербурге</a>                по самой низкой цене.
             </p>
 
-            <div class="shares_choose-blocks">
-                <div class="shares_choose-blocks--item">
+            <div class="choose_items-blocks">
+                <div class="choose_items-blocks--item">
 
-                    <div class="shares_choose-item--header">
+                    <div class="choose_items-item--header">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -540,12 +515,12 @@
                         </span>
                     </div>
 
-                    <div class="shares_choose-item--body">
-                        
+                    <div class="choose_items-item--body">
+
                         <h3>
-                            Снегокат «Nika джамп» зимний спорт 
+                            Снегокат «Nika джамп» зимний спорт
                         </h3>
-                        
+
                         <ul class="select-custom js_select-custom">
                             <li>
                                 аренда 1 неделя: 500
@@ -573,9 +548,9 @@
                     </div>
 
                 </div>
-                <div class="shares_choose-blocks--item">
+                <div class="choose_items-blocks--item">
 
-                    <div class="shares_choose-item--header">
+                    <div class="choose_items-item--header">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -604,12 +579,12 @@
                         </span>
                     </div>
 
-                    <div class="shares_choose-item--body">
-                        
+                    <div class="choose_items-item--body">
+
                         <h3>
-                            Снегокат «Nika джамп» зимний спорт 
+                            Снегокат «Nika джамп» зимний спорт
                         </h3>
-                        
+
                         <ul class="select-custom js_select-custom">
                             <li>
                                 аренда 1 неделя: 500
@@ -637,9 +612,9 @@
                     </div>
 
                 </div>
-                <div class="shares_choose-blocks--item">
+                <div class="choose_items-blocks--item">
 
-                    <div class="shares_choose-item--header">
+                    <div class="choose_items-item--header">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -668,12 +643,12 @@
                         </span>
                     </div>
 
-                    <div class="shares_choose-item--body">
-                        
+                    <div class="choose_items-item--body">
+
                         <h3>
-                            Снегокат «Nika джамп» зимний спорт 
+                            Снегокат «Nika джамп» зимний спорт
                         </h3>
-                        
+
                         <ul class="select-custom js_select-custom">
                             <li>
                                 аренда 1 неделя: 500
@@ -701,9 +676,9 @@
                     </div>
 
                 </div>
-                <div class="shares_choose-blocks--item">
+                <div class="choose_items-blocks--item">
 
-                    <div class="shares_choose-item--header">
+                    <div class="choose_items-item--header">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -732,12 +707,12 @@
                         </span>
                     </div>
 
-                    <div class="shares_choose-item--body">
-                        
+                    <div class="choose_items-item--body">
+
                         <h3>
-                            Снегокат «Nika джамп» зимний спорт 
+                            Снегокат «Nika джамп» зимний спорт
                         </h3>
-                        
+
                         <ul class="select-custom js_select-custom">
                             <li>
                                 аренда 1 неделя: 500
@@ -778,10 +753,10 @@
             </h2>
 
             <p>
-                Наши детки растут не по годам, а по часам. Но как же быть, если ребенку постоянно нужно покупать различные товары на каждый возраст? Выход есть! АистЛандия поможет вам избежать лишних расходов. У нас вы можете <a href="#">арендовать детские товары в Санкт-Петербурге</a> по самой низкой цене.
+                Наши детки растут не по годам, а по часам. Но как же быть, если ребенку постоянно нужно покупать различные товары на каждый возраст? Выход есть! АистЛандия поможет вам избежать лишних расходов. У нас вы можете <a href="#">арендовать детские товары в Санкт-Петербурге</a>                по самой низкой цене.
             </p>
             <p>
-                Наши детки растут не по годам, а по часам. Но как же быть, если ребенку постоянно нужно покупать различные товары на каждый возраст? Выход есть! АистЛандия поможет вам избежать лишних расходов. У нас вы можете <a href="#">арендовать детские товары в Санкт-Петербурге</a> по самой низкой цене.
+                Наши детки растут не по годам, а по часам. Но как же быть, если ребенку постоянно нужно покупать различные товары на каждый возраст? Выход есть! АистЛандия поможет вам избежать лишних расходов. У нас вы можете <a href="#">арендовать детские товары в Санкт-Петербурге</a>                по самой низкой цене.
             </p>
         </div>
 
@@ -807,37 +782,37 @@
             <div class="row">
                 <ul class="footer_content-menu">
                     <li class="js_active">
-                      <a href="#">
+                        <a href="#">
                         Главная
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                        <a href="#">
                         Каталог
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                        <a href="#">
                         Автокресла
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                        <a href="#">
                         Коляски
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                        <a href="#">
                         Весы
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                        <a href="#">
                         Условия
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                        <a href="#">
                         Контакты
                       </a>
                     </li>
@@ -847,48 +822,48 @@
                 <div class="footer_content-phones">
 
                     <img src="./images/icon-phone.png" alt="clock">
-                    
+
                     <div class="">
-                      <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
-                      <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
+                        <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
+                        <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
                     </div>
-                    
-                    </div>
-                
-                
-                    <div class="footer_content-recall">
-                        <button type="button" class="btn" data-fancybox="" data-src="#modal_recall" data-touch="false">
+
+                </div>
+
+
+                <div class="footer_content-recall">
+                    <button type="button" class="btn" data-fancybox="" data-src="#modal_recall" data-touch="false">
                         Обратный звонок
                         </button>
-                    </div>
-                
-                
-                    <div class="footer_content-time">
-                
-                        <img src="./images/icon-clock.png" alt="clock">
-                
-                        <p>
+                </div>
+
+
+                <div class="footer_content-time">
+
+                    <img src="./images/icon-clock.png" alt="clock">
+
+                    <p>
                         Время работы
-                
+
                         <span class="text-danger">
                             10<sup>00</sup> - 20<sup>00</sup>
                         </span>
-                        </p>
-                    </div>
-                
-                
-                    <div class="footer_content-bucket">
-                
-                        <img src="./images/icon-bucket.png" alt="bucket">
-                
-                        <p>
+                    </p>
+                </div>
+
+
+                <div class="footer_content-bucket">
+
+                    <img src="./images/icon-bucket.png" alt="bucket">
+
+                    <p>
                         Ваша корзина
-                
+
                         <span class="text-danger">
                             Нет товаров
                         </span>
-                        </p>
-                    </div>
+                    </p>
+                </div>
             </div>
             <div class="row justify-content-center-md">
                 <p>
@@ -898,20 +873,18 @@
         </div>
 
     </div>
-  
-</footer>
-    </div>
+
+</footer> </div>
 
 
-    <div id="modal_recall" class="modal modal-recall" style="display: none;">
+<div id="modal_recall" class="modal modal-recall" style="display: none;">
 
     <h3>
         Обратный звонок
     </h3>
 
     <p>
-        Заполните форму и наш менеджер свжется 
-        с Вами в течение 15 минут.
+        Заполните форму и наш менеджер свжется с Вами в течение 15 минут.
     </p>
 
 
@@ -936,8 +909,7 @@
         заказать звонок
     </button>
 
-</div>
-    <div id="modal_success" class="modal modal-success" style="display: none;">
+</div> <div id="modal_success" class="modal modal-success" style="display: none;">
 
     <h3>
         Ваша заявка принята!
@@ -951,12 +923,11 @@
         Вернуться на сайт
     </a>
 
-</div>
-    <div id="modal_choose_big" class="modal modal-choose-big" style="display: none;">
+</div> <div id="modal_choose_big" class="modal modal-choose-big" style="display: none;">
 
-  
+
     <div class="choose_big-header">
-        
+
         <div class="choose_big-header--media swiper-container-modal">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -987,7 +958,7 @@
 
         <div class="choose_big-header--content">
             <h3>
-                Коляска YOYA (или аналог) 
+                Коляска YOYA (или аналог)
             </h3>
 
             <ul>
@@ -1063,18 +1034,18 @@
         </span>
 
     </div>
-  
-    <div class="choose_big-body">
-       <p class="text-bold">
-            Описание:
-       </p> 
 
-       <p>
-        Это идеальный помощник для мамы в поезд. Ребенок во время сна или игр не упадет с полки на пол. Можно кормить малыша, не привлекая внимания, скрыть его от чужих глаз. Родители могут свободно перемещаться по вагону. Могут помещаться два ребенка сразу. 
-        И самое главное преимущство то, что защищает от сквозняков.
-       </p>
+    <div class="choose_big-body">
+        <p class="text-bold">
+            Описание:
+        </p>
+
+        <p>
+            Это идеальный помощник для мамы в поезд. Ребенок во время сна или игр не упадет с полки на пол. Можно кормить малыша, не привлекая внимания, скрыть его от чужих глаз. Родители могут свободно перемещаться по вагону. Могут помещаться два ребенка сразу.
+            И самое главное преимущство то, что защищает от сквозняков.
+        </p>
     </div>
-  
+
     <div class="choose_big-footer">
         <button type="button" class="btn">
             Взять напрокат
@@ -1086,12 +1057,11 @@
     </div>
 
 
-</div>
-    <div id="modal_choose_small" class="modal modal-choose-small" style="display: none;">
+</div> <div id="modal_choose_small" class="modal modal-choose-small" style="display: none;">
 
-  
+
     <div class="choose_small-header">
-        
+
         <div class="choose_small-header--media swiper-container-modal">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1121,7 +1091,7 @@
         </div>
 
         <h3>
-            Коляска YOYA (или аналог) 
+            Коляска YOYA (или аналог)
         </h3>
 
 
@@ -1131,11 +1101,11 @@
         </span>
 
     </div>
-    
+
     <div class="choose_small-footer">
-        
+
         <div class="row column-mob">
-            
+
             <ul class="select-custom js_select-custom">
                 <li>
                     аренда 1 неделя: 500
@@ -1160,35 +1130,35 @@
             <button type="button" class="btn">
                 Забронировать
             </button>
-            
+
         </div>
 
-        
+
         <div class="row column-mob">
-            
+
             <p class="select-date-custom js_select-date-custom">
                 21.12.2020 - 28.12.2020
             </p>
 
-            <a  href="#">
-                Забронировать
-            </a>
-            
+            <a href="#" class="js_close_modal">
+                Вернуться назад
+            </и>
+
         </div>
 
     </div>
 
 
 </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-    <script src="./app/js/scripts.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="./app/js/scripts.js"></script>
 </body>
-</html>
 
+</html>

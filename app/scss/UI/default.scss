@@ -38,3 +38,15 @@ body {
 .text-bold {
   font-weight: bold !important;
 }
+
+a {
+  color: $blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mt-5 {
+  margin-top: 40px;
+}

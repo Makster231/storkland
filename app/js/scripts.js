@@ -45,6 +45,14 @@
     });
   }
 
+  function closeModal() {
+    $.fancybox.close();
+  }
+
+  $(".js_close_modal").on("click", function () {
+    closeModal();
+  });
+
   function burgerMenu() {
     $(".icon_burger-toggle").on("click", function () {
       $("body").toggleClass("js_active_burger_menu");
