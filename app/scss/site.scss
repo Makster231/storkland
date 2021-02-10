@@ -5,6 +5,8 @@
 @import "settings/grid";
 /* purgecss start ignore */
 //UI:
+@import "UI/swiper";
+@import "UI/modals";
 @import "UI/fonts";
 @import "UI/default";
 @import "UI/animation";
@@ -14,4 +16,6 @@
 @import "components/header";
 @import "components/main-page";
 @import "components/footer";
+
+@import "components/pages/shares";
 /* purgecss end ignore */

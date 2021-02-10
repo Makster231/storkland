@@ -1,0 +1,256 @@
+.footer {
+  padding-top: 182px;
+  padding-bottom: 27px;
+  background-image: url(../../images/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 640px) {
+    background-position: center top;
+  }
+  &_container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+    }
+  }
+
+  &_top {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-direction: column;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 960px) {
+      max-width: 264px;
+      align-items: unset;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &-logo {
+      @media (max-width: 640px) {
+        margin-bottom: 22px;
+      }
+      @media (min-width: 960px) {
+        margin-bottom: 22px;
+      }
+    }
+
+    p {
+      color: #434343;
+      font-size: 15px;
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
+
+      @media (min-width: 960px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &_content {
+    @media (min-width: 960px) {
+      margin-left: 30px;
+    }
+
+    @media (min-width: 1168px) {
+      margin-left: auto;
+    }
+    .row {
+      &:last-of-type {
+        margin-top: 20px;
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          text-align: center;
+          line-height: 1.3;
+        }
+      }
+
+      @media (min-width: 640px) {
+        &:last-of-type {
+          margin-top: 25px;
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+
+      @media (min-width: 960px) {
+        &:last-of-type {
+          margin-top: 38px;
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    &-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      z-index: 5;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+
+      @media (min-width: 640px) {
+        flex-wrap: unset;
+      }
+
+      @media (min-width: 960px) {
+        margin-bottom: 5px;
+        margin-right: unset;
+        margin-left: unset;
+      }
+
+      li {
+        @media (max-width: 640px) {
+          width: 33%;
+
+          &:last-of-type {
+            width: 100%;
+          }
+        }
+
+        a {
+          display: block;
+          padding: 15px;
+          color: $black;
+          font-weight: bold;
+          font-size: 12px;
+          text-align: center;
+          width: 100%;
+          transition: 0.3s ease;
+        }
+
+        &.js_active a,
+        &:hover a {
+          color: $blue;
+        }
+      }
+    }
+
+    &-bucket,
+    &-phones,
+    &-time {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-time,
+    &-bucket {
+      font-size: 14px;
+
+      span {
+        display: block;
+        font-size: 16px;
+      }
+    }
+
+    &-phones {
+      align-items: flex-end;
+      margin-bottom: 20px;
+
+      @media (min-width: 640px) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+      @media (min-width: 1168px) {
+        margin-right: 30px;
+      }
+
+      img {
+        width: 19px;
+        height: 48px;
+        margin-right: 5px;
+      }
+      a {
+        color: $black;
+        font-size: 15px;
+        display: block;
+
+        &:hover {
+          span {
+            transition: 0.3s ease;
+            color: $black;
+          }
+        }
+
+        &:last-of-type {
+          margin-top: 3px;
+        }
+      }
+    }
+
+    &-recall {
+      margin-bottom: 20px;
+      order: 1;
+
+      @media (min-width: 640px) {
+        order: unset;
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+      @media (min-width: 1168px) {
+        margin-right: 30px;
+      }
+      .btn {
+        max-width: 170px;
+        min-width: 170px;
+        font-size: 13px;
+      }
+    }
+
+    &-time {
+      align-self: center;
+      margin-bottom: 20px;
+
+      @media (min-width: 640px) {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+      @media (min-width: 1168px) {
+        margin-right: 54px;
+      }
+
+      img {
+        margin-right: 7px;
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    &-bucket {
+      margin-bottom: 20px;
+
+      @media (min-width: 640px) {
+        margin-bottom: 0;
+      }
+
+      img {
+        margin-right: 10px;
+        width: 32px;
+        height: 35px;
+      }
+    }
+  }
+}

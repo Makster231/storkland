@@ -9,3 +9,21 @@ body {
   font-family: "Gotham Pro" !important;
   box-sizing: border-box;
 }
+
+.input-text {
+  display: block;
+  width: 100%;
+  border-radius: 25px;
+  outline: 0;
+  border: 1px solid #c8c8c8;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 1;
+  color: $black;
+  text-align: center;
+
+  &::placeholder {
+    color: #c8c8c8;
+  }
+}

@@ -47,111 +47,228 @@
 <div class="wrapper-page">
   <header class="header js_header">
     
-    <div class="container header_top">
-      <a href="/" class="header_top-logo">
-        <img src="./images/logo.png" alt="Logo">
-      </a>
+    <div class="header_container container">
+      <div class=" header_top">
+        <a href="/" class="header_top-logo">
+          <img src="./images/logo.png" alt="Logo">
+        </a>
+  
+       <div class="header_top-burger js_header_top-burger">
 
-      <div class="header_top-phones">
-
-        <img src="./images/icon-phone.png" alt="clock">
-        
-        <div class="">
-          <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
-          <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
+        <div class="icon_burger-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 6H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 18H21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+            
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="js_hidden">
+            <path d="M16.9502 7.04883L7.0507 16.9483" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.0498 7.04883L16.9493 16.9483" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
-        
+
+        <div class="header_top-phones">
+  
+          <img src="./images/icon-phone.png" alt="clock">
+          
+          <div class="">
+            <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
+            <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
+          </div>
+          
+        </div>
+  
+  
+        <div class="header_top-recall">
+          <button type="button" class="btn"  data-fancybox="" data-src="#modal_success" data-touch="false">
+            Обратный звонок
+          </button>
+        </div>
+  
+  
+        <div class="header_top-time">
+  
+          <img src="./images/icon-clock.png" alt="clock">
+  
+          <p>
+            Время работы
+  
+            <span class="text-danger">
+              10<sup>00</sup> - 20<sup>00</sup>
+            </span>
+          </p>
+        </div>
+  
+  
+        <div class="header_top-bucket">
+  
+          <img src="./images/icon-bucket.png" alt="bucket">
+  
+          <p>
+            Ваша корзина
+  
+            <span class="text-danger">
+              Нет товаров
+            </span>
+          </p>
+        </div>
+       </div>
       </div>
-
-
-      <div class="header_top-recall">
-        <button type="button" class="btn">
-          Обратный звонок
-        </button>
-      </div>
-
-
-      <div class="header_top-time">
-
-        <img src="./images/icon-clock.png" alt="clock">
-
-        <p>
-          Время работы
-
-          <span class="text-danger">
-            10<sup>00</sup> -20<sup>00</sup>
-          </span>
-        </p>
-      </div>
-
-
-      <div class="header_top-bucket">
-
-        <img src="./images/icon-bucket.png" alt="bucket">
-
-        <p>
-          Ваша корзина
-
-          <span class="text-danger">
-            Нет товаров
-          </span>
-        </p>
-      </div>
-    </div>
-
-
-    <ul class="container header_menu">
-      <li>
-        <a href="#">
-          Главная
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Каталог
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Автокресла
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Коляски
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Весы
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Условия
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Контакты
-        </a>
-      </li>
-    </ul>
-
-
-    <div class="container header_content">
-      <h1>
-        акции
-      </h1>
-
-      <ul class="header_content-breadcrumbs">
-        <li>
-          <a href="#">Главная</a>
-        </li>
+  
+  
+      <ul class=" header_menu">
         <li class="js_active">
-          <a href="#">Акции</a>
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Каталог
+          </a>
+        </li>
+        <li>
+          <p >
+            Автокресла
+          </p>
+          
+
+          <ul>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+          </ul>
+
+          <span class="icon-svg">
+            <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/></svg></svg>
+          </span>
+        </li>
+        <li>
+          <p >
+            Коляски
+          </p>
+          
+
+          <ul>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+          </ul>
+
+          <span class="icon-svg">
+            <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/></svg></svg>
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            Весы
+          </a>
+        </li>
+        <li>
+          <p>
+            Условия
+          </p>
+
+
+          <ul>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              один
+             </a>
+            </li>
+          </ul>
+
+          <span class="icon-svg">
+            <svg width="9" height="7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.125 9 6.75" fill="#ffffff"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="1.012 1.014 8 6"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M5.01 3.861L2.478 1.014 1.012 2.66 5.01 7.014 9.012 2.66 7.54 1.014 5.01 3.861z"/></svg></svg>
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            Контакты
+          </a>
         </li>
       </ul>
+  
+  
+      <div class=" header_content">
+        <h1>
+          акции
+        </h1>
+  
+        <ul class="header_content-breadcrumbs">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li class="js_active">
+            <a href="#">Акции</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </header>
@@ -161,17 +278,177 @@
 
 </main>
 
-<footer>
+<footer class="footer">
+
+    <div class="footer_container container">
+
+        <div class="footer_top">
+            <a href="/" class="footer_top-logo">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+
+            <p>
+                Нас знают и нам доверяют тысячи родителей и детей
+            </p>
+        </div>
+
+        <div class="footer_content">
+            <div class="row">
+                <ul class="footer_content-menu">
+                    <li class="js_active">
+                      <a href="#">
+                        Главная
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Каталог
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Автокресла
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Коляски
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Весы
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Условия
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Контакты
+                      </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row align-items-center column-mob justify-content-center-md">
+                <div class="footer_content-phones">
+
+                    <img src="./images/icon-phone.png" alt="clock">
+                    
+                    <div class="">
+                      <a href="tel:+7(921)312-54-00">+7(921) <span class="text-danger">312-54-00</span></a>
+                      <a href="tel:+7(812)908-88-20">+7(812) <span class="text-danger">908-88-20</span></a>
+                    </div>
+                    
+                    </div>
+                
+                
+                    <div class="footer_content-recall">
+                        <button type="button" class="btn" data-fancybox="" data-src="#modal_recall" data-touch="false">
+                        Обратный звонок
+                        </button>
+                    </div>
+                
+                
+                    <div class="footer_content-time">
+                
+                        <img src="./images/icon-clock.png" alt="clock">
+                
+                        <p>
+                        Время работы
+                
+                        <span class="text-danger">
+                            10<sup>00</sup> - 20<sup>00</sup>
+                        </span>
+                        </p>
+                    </div>
+                
+                
+                    <div class="footer_content-bucket">
+                
+                        <img src="./images/icon-bucket.png" alt="bucket">
+                
+                        <p>
+                        Ваша корзина
+                
+                        <span class="text-danger">
+                            Нет товаров
+                        </span>
+                        </p>
+                    </div>
+            </div>
+            <div class="row justify-content-center-md">
+                <p>
+                    Все права защищены. 2020г.©АистЛандия. Запрещено копировать дизайн и информацию с сайта
+                </p>
+            </div>
+        </div>
+
+    </div>
   
 </footer>
     </div>
-        
+
+
+    <div id="modal_recall" class="modal modal-recall" style="display: none;">
+
+    <h3>
+        Обратный звонок
+    </h3>
+
+    <p>
+        Заполните форму и наш менеджер свжется 
+        с Вами в течение 15 минут.
+    </p>
+
+
+    <div class="form-controll">
+        <label for="recall_phone">
+            Введите ваш телефон
+        </label>
+
+        <input id="recall_phone" name="recall_phone" type="tel" class="input-text" data-mask="+0 (000) 000-00-00" placeholder="+7 (___) ___-__-__">
+    </div>
+
+    <div class="form-controll">
+        <label for="recall_name">
+            Введите ваше имя
+        </label>
+
+        <input id="recall_name" name="recall_name" type="text" class="input-text" placeholder="Как к Вам обращаться?">
+    </div>
+
+
+    <button type="button" class="btn ">
+        заказать звонок
+    </button>
+
+</div>
+    <div id="modal_success" class="modal modal-success" style="display: none;">
+
+    <h3>
+        Ваша заявка принята!
+    </h3>
+
+    <p>
+        Благодарим за обращение. Ваша заявка на обратный звонок принята. Ожидайте звонок! В течение 15 минут наш менеджер свяжется с вами
+    </p>
+
+    <a href="/">
+        Вернуться на сайт
+    </a>
+
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous"></script>
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js" integrity="sha256-Cq7XEyDcEipCpZODrMe4Bxukqlx8R9ZndzIYs4wytEM=" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
     <script src="./app/js/scripts.js"></script>
 </body>
 </html>
