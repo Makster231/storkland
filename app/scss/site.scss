@@ -16,6 +16,7 @@
 @import "UI/select";
 @import "UI/radio";
 @import "UI/pagination";
+@import "UI/bad-review";
 @import "UI/choose";
 //Components:
 @import "components/wrapper-page";
@@ -27,5 +28,6 @@
 @import "components/pages/contract";
 @import "components/pages/hygiene";
 @import "components/pages/order";
+@import "components/pages/about";
 
 /* purgecss end ignore */

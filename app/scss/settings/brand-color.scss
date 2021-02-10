@@ -2,7 +2,10 @@
 $white: #fff;
 $red: #ff587a;
 $blue: #5DC0FF;
-
 .text-danger {
-  color: $red;
+    color: $red;
+}
+
+.text-blue {
+    color: $blue !important;
 }
