@@ -1,6 +1,8 @@
 .order {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    @media (min-width: 640px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     &_container {
         display: flex;
         flex-direction: column;

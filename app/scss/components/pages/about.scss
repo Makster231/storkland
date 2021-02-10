@@ -189,6 +189,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: url(../../images/about_bg_click.png) center no-repeat;
+            background-size: 100% 100% !important;
             @media (min-width: 640px) {
                 flex-direction: row;
             }
@@ -338,53 +340,6 @@
                 @media (min-width: 640px) {
                     object-fit: none;
                     height: 490px;
-                }
-            }
-            &--block {
-                margin-bottom: 30px;
-                width: 100%;
-                @media (min-width: 640px) {
-                    margin-right: 30px;
-                    max-width: calc((100% / 3) - 20px);
-                }
-                @media (min-width: 960px) {
-                    margin-right: 66px;
-                    max-width: calc((100% / 3) - 45px);
-                }
-                &:nth-of-type(3n) {
-                    margin-right: 0;
-                }
-                p {
-                    font-size: 15px;
-                    color: #000000;
-                    margin-bottom: 12px;
-                    @media (min-width: 960px) {
-                        font-size: 13px;
-                        margin-bottom: 16px;
-                    }
-                    &:last-of-type {
-                        font-size: 12px;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        margin-bottom: 0;
-                        font-weight: bold;
-                        @media (min-width: 960px) {
-                            font-size: 14px;
-                        }
-                        span {
-                            width: 22px;
-                            height: 22px;
-                            min-width: 22px;
-                            min-height: 22px;
-                            border-radius: 50%;
-                            line-height: 22px;
-                            text-align: center;
-                            display: block;
-                            background-color: #FFDC4E;
-                            margin-right: 10px;
-                        }
-                    }
                 }
             }
         }

@@ -46,6 +46,10 @@
     }
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .justify-content-center-md {
     @media (max-width: 960px) {
         justify-content: center;
@@ -58,4 +62,8 @@
 
 .align-items-start {
     align-items: flex-start;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
