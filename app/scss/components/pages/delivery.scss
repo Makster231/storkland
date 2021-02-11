@@ -1,0 +1,609 @@
+.delivery {
+  @media (min-width: 640px) {
+    padding-bottom: 50px;
+  }
+  h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    img {
+      margin-right: 10px;
+    }
+    @media (min-width: 640px) {
+      font-size: 21px;
+    }
+
+    &.title_small {
+      max-width: 210px;
+      margin-left: auto;
+    }
+  }
+  &_aside {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    @media (min-width: 960px) {
+      padding-top: 340px;
+      width: 32%;
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: -170%;
+
+      @media (max-width: 960px) {
+        position: absolute;
+        top: -50%;
+        right: -25%;
+        transform: scale(-0.75, 0.75);
+        left: unset;
+      }
+      @media (max-width: 640px) {
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        top: 0;
+        transform: none;
+        right: 0;
+      }
+
+      @media (min-width: 1168px) {
+        left: -115%;
+      }
+    }
+
+    h3,
+    p {
+      @media (min-width: 960px) {
+        max-width: 250px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      color: #000000;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 5px;
+    }
+  }
+
+  &_main {
+    width: 100%;
+    margin-bottom: 30px;
+
+    .offset_left-big {
+      @media (min-width: 960px) {
+        margin-left: 130px;
+      }
+    }
+
+    .offset_left-middle {
+      @media (min-width: 960px) {
+        margin-left: 100px;
+      }
+    }
+
+    > p:not(.offset_left-middle) {
+      font-weight: 300;
+      font-size: 14px;
+      color: #000000;
+      line-height: 1.4;
+      max-width: 100%;
+      display: block;
+      text-align: center;
+
+      @media (min-width: 960px) {
+        max-width: 580px;
+        text-align: left;
+      }
+    }
+
+    ul {
+      margin-bottom: 20px;
+      li {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 15px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 15px;
+          line-height: 1.3;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          background: url(../../images/delivery_icon_check.png) center no-repeat;
+          background-size: contain;
+          width: 20px;
+          height: 20px;
+          display: block;
+        }
+      }
+    }
+
+    &-block {
+      border: 1px dotted #5dc0ff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      padding: 20px 10px;
+
+      @media (min-width: 640px) {
+        padding: 35px 24px;
+      }
+
+      &--section {
+        max-width: 330px;
+        margin-bottom: 40px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        @media (min-width: 640px) {
+          margin-bottom: 0;
+          margin-right: 75px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+
+        p {
+          font-size: 15px;
+          text-align: center;
+          line-height: 1.3;
+          margin-bottom: 16px;
+
+          @media (min-width: 640px) {
+            margin-bottom: 24px;
+          }
+        }
+
+        h4 {
+          color: #5dc0ff;
+          text-align: center;
+          font-size: 21px;
+          font-weight: bold;
+          margin-bottom: 12px;
+
+          @media (min-width: 640px) {
+            margin-bottom: 20px;
+          }
+        }
+
+        span {
+          line-height: 1.3;
+          font-size: 14px;
+          color: #000000;
+          text-align: center;
+          font-weight: 300;
+          display: block;
+        }
+      }
+
+      &--underText {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.4;
+        max-width: 663px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        @media (min-width: 1168px) {
+          padding-left: 100px;
+        }
+
+        span {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  &_important {
+    width: 100%;
+    margin-top: 98px;
+    position: relative;
+    margin-bottom: 40px;
+    @media (min-width: 640px) {
+      margin-left: 98px;
+      max-width: 300px;
+      margin-top: 0;
+    }
+
+    @media (min-width: 960px) {
+      max-width: 524px;
+    }
+
+    @media (min-width: 1168px) {
+      max-width: 767px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+
+      background: url(../../images/delivery_icon_macrophone.png) center
+        no-repeat;
+      background-size: contain;
+      width: 78px;
+      left: 0;
+      top: -100px;
+      height: 62px;
+      display: block;
+    }
+
+    @media (min-width: 640px) {
+      &:before {
+        left: -98px;
+        top: 0;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: url(../../images/delivery_car_2.png) center no-repeat;
+      background-size: contain;
+      width: 721px;
+      height: 348px;
+      display: block;
+      right: -100%;
+      top: -30%;
+      z-index: 0;
+      opacity: 0.6;
+    }
+    @media (min-width: 640px) {
+      &:after {
+        right: -170%;
+        top: 0;
+        opacity: 0.8;
+      }
+    }
+    @media (min-width: 960px) {
+      &:after {
+        right: -135%;
+        top: -30%;
+        opacity: 1;
+        z-index: unset;
+      }
+    }
+    @media (min-width: 1168px) {
+      &:after {
+        right: -90%;
+        top: -70%;
+      }
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #000000;
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 5;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 640px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &_way {
+    .bg_blue {
+      width: 100%;
+      padding: 23px;
+      background-color: $blue;
+      color: $white;
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-right: auto;
+      margin-top: 20px;
+
+      @media (min-width: 640px) {
+        max-width: 60%;
+        margin-top: 0;
+      }
+
+      @media (min-width: 960px) {
+        max-width: 70%;
+      }
+
+      @media (min-width: 1168px) {
+        max-width: 870px;
+        font-size: 15px;
+      }
+    }
+    h3 {
+      width: 205px;
+      margin-bottom: 0;
+      @media (max-width: 640px) {
+        margin-left: auto;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      position: relative;
+      padding-bottom: 50px;
+
+      @media (max-width: 960px) {
+        flex-wrap: wrap;
+      }
+      @media (min-width: 640px) {
+        margin-top: 50px;
+      }
+      @media (min-width: 960px) {
+        padding-bottom: 170px;
+      }
+
+      &:before {
+        content: "";
+        background: url(../../images/delivery_poster_phone.png) center no-repeat;
+        background-size: contain;
+        display: block;
+        width: 100%;
+        height: 250px;
+        z-index: 0;
+      }
+
+      @media (min-width: 640px) {
+        &:before {
+          position: relative;
+          left: 0;
+          top: 0;
+          width: 724px;
+          height: 394px;
+        }
+      }
+
+      @media (min-width: 960px) {
+        &:before {
+          position: absolute;
+          left: -30%;
+          top: -20%;
+        }
+      }
+
+      @media (min-width: 1168px) {
+        &:before {
+          left: -23%;
+        }
+      }
+
+      &--item {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 5;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        @media (min-width: 640px) {
+          margin-right: 30px;
+          max-width: calc((100% / 3) - 20px);
+          margin-bottom: 0;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+
+        @media (min-width: 960px) {
+          max-width: calc((100% / 4) - 15px);
+
+          &:first-of-type {
+            margin-left: auto;
+          }
+        }
+        h4 {
+          margin-bottom: 20px;
+          font-size: 17px;
+          font-weight: bold;
+          color: #000000;
+
+          @media (min-width: 640px) {
+            margin-bottom: 30px;
+          }
+        }
+
+        p {
+          line-height: 1.4;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &_prolong {
+    h3 {
+      margin-left: auto;
+      width: 315px;
+      text-align: right;
+      margin-bottom: 30px;
+
+      img {
+        margin-left: 25px;
+      }
+
+      @media (min-width: 960px) {
+        margin-bottom: 67px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 67px;
+      flex-wrap: wrap;
+      &:before {
+        content: "";
+        background: url(../../images/delivery_poster_man.png) center no-repeat;
+        background-size: contain;
+        display: block;
+        z-index: 0;
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 960px) {
+        flex-wrap: nowrap;
+
+        &:before {
+          position: absolute;
+          right: -27%;
+          top: -40%;
+          width: 783px;
+          height: 417px;
+          margin-bottom: 0;
+        }
+      }
+
+      &--item {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 5;
+        padding-left: 65px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 63px;
+          background-size: contain;
+        }
+
+        &:first-of-type {
+          &:before {
+            width: 29px;
+            background-image: url(../../images/delivery_number_1.png);
+          }
+        }
+
+        &:nth-of-type(2) {
+          &:before {
+            width: 41px;
+            background-image: url(../../images/delivery_number_2.png);
+          }
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+          &:before {
+            width: 42px;
+            background-image: url(../../images/delivery_number_3.png);
+          }
+        }
+
+        @media (min-width: 640px) {
+          max-width: calc((100% / 3));
+          padding-left: 45px;
+        }
+
+        @media (min-width: 960px) {
+          margin-right: 30px;
+          max-width: calc((100% / 3) - 75px);
+          margin-bottom: 0;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+
+        p {
+          font-size: 15px;
+          font-weight: 300;
+          margin-bottom: 20px;
+          line-height: 1.4;
+
+          &.text-bold {
+            font-weight: bold;
+            margin-bottom: 0;
+            font-size: 17px;
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_btns {
+    position: relative;
+    z-index: 15;
+    .input-text,
+    .btn {
+      margin-bottom: 20px;
+      max-width: 100%;
+      height: 64px;
+      line-height: 64px;
+      padding: 0;
+      font-size: 16px;
+      font-weight: bold;
+
+      @media (min-width: 640px) {
+        max-width: 271px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
+    }
+    .input-text {
+      cursor: pointer;
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .btn {
+      background-color: $blue;
+      box-shadow: none;
+
+      &:hover {
+        background-color: darken($blue, 20%);
+      }
+    }
+  }
+}
