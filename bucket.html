@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="header_top-recall">
-                        <button type="button" class="btn" data-fancybox="" data-src="#modal_recall" data-touch="false">
+                        <button type="button" class="btn" data-fancybox="" data-src="#modal_choose_small" data-touch="false">
                    Обратный звонок
                    </button>
                     </div>
@@ -414,18 +414,19 @@
                 Проверьте, пожалуйста, перед тем как заказать, все ли верно заполнено. Если заказ отображается верно, то можете нажать кнопку "Оформить зказ".
             </p>
 
-            <div class="delivery_block">
-    <h2>
-        7 пунктов выдачи товара
-        <span>по Санкт-Петербургу и области</span>
-    </h2>
-
-    <button type="button" class="btn">
-            Найти ближайший пункт
-        </button>
-
-    <img class="bg_img" src="./images/share_car_1.png" alt="CAR">
-</div>
+           
+            <div class="delivery_block delivery_block-small">
+                <h2>
+                    7 пунктов выдачи товара
+                    <span>по Санкт-Петербургу и области</span>
+                </h2>
+            
+                <button type="button" class="btn">
+                        Найти ближайший пункт
+                    </button>
+            
+                <img class="bg_img" src="./images/share_car_1.png" alt="CAR">
+            </div>
         </div>
 
         <div class="bucket_aside">
@@ -910,9 +911,13 @@
 
         <div class="row column-mob">
 
-            <p class="select-date-custom js_select-date-custom">
-                21.12.2020 - 28.12.2020
-            </p>
+            <div class="form-control select-date-custom js_select-date-custom">
+                <input class="input-text" value="" name='datetimes' id="datepicker" placeholder="21.12.2020 - 28.12.2020" readonly>
+                
+                <div class="icon-open-date js_icon-open-date">
+                    <img src="./images/icon-date-active.png" alt="Images">
+                </div>
+            </div>
 
             <a href="#" class="js_close_modal">
                 Вернуться назад
@@ -926,12 +931,14 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ==" crossorigin="anonymous"></script>
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
 <script src="./app/js/scripts.js"></script>
 </body>
 

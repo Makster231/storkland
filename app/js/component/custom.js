@@ -37,15 +37,64 @@
     function closeModal() {
         $.fancybox.close();
     }
+
     $(".js_close_modal").on("click", function() {
         closeModal();
     })
-
 
     function burgerMenu() {
         $(".icon_burger-toggle").on("click", function() {
             $("body").toggleClass("js_active_burger_menu");
         })
+    }
+
+    function asideCategory(){
+        
+        $(".js_aside_category-item").on("click", function(e){
+            let $this = $(this);
+
+            if($this.has(".js_aside_category-item--has")){
+                if($this.find("ul").has(e.target).length === 0){
+                    $this.toggleClass("js_active");
+                    $this.find("ul").toggle("300");
+                }
+            }
+            
+            if($this.find("li").is(e.target) || $this.find("p").is(e.target)){
+                if($this.find("p").is(e.target)){
+                    $(e.target).closest("li").toggleClass("js_active");
+                }else{
+                    $(e.target).toggleClass("js_active");
+                }
+            }
+        })
+
+    }
+
+    function activateTooltipster(){
+        
+
+        $(".js_btn_empty").on("mouseover", function(){
+            let a = $(this).parent().find(".js_tooltipster_text").html();
+
+            $(this).tooltipster({
+                position: "bottom",
+                side: "top",
+                trigger: 'hover',
+                contentAsHTML: true,
+                interactive: true,
+                content: $(a)
+            });
+        })
+    }
+
+    function openDatePicker(){
+        $('.js_icon-open-date').click(function() {
+            $('input[name="datetimes"]').daterangepicker({
+                timePicker: true,
+                opens: "center"
+              });
+        });
     }
 
     $(() => {
@@ -61,5 +110,11 @@
         ChooseSlides();
 
         burgerMenu();
+
+        activateTooltipster();
+        
+        openDatePicker();
+
+        asideCategory();
     });
 })(window.jQuery, window, document);

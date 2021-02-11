@@ -1,0 +1,28 @@
+.aside_filtr {
+  border-radius: 20px;
+  border: 1px solid #dbe8ea;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f2fdff;
+
+  > li {
+    p {
+      padding: 24px 15px 10px;
+      border-bottom: 1px solid #dbe8ea;
+      display: block;
+    }
+
+    ul {
+      padding: 16px 0 8px 45px;
+
+      li {
+        label {
+          font-size: 14px;
+          font-weight: 300;
+          color: #1c1d24;
+        }
+      }
+    }
+  }
+}

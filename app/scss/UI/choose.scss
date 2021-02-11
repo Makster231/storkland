@@ -43,9 +43,16 @@
       padding: 24px 10px 17px;
       border-radius: 10px;
       margin-bottom: 27px;
-      border: 1px solid $blue;
+      border: 1px solid #f5fbff;
       position: relative;
       background-color: $white;
+      transition: 0.3s ease;
+
+      &:hover {
+        border-color: $blue;
+        cursor: pointer;
+      }
+
       @media (min-width: 640px) {
         margin-right: 30px;
         max-width: calc((100% / 2) - 16px);
@@ -81,6 +88,82 @@
             z-index: 5;
             font-size: 17px;
             font-weight: bold;
+          }
+
+          .propostion {
+            top: 60px;
+            position: absolute;
+            padding: 10px;
+            text-align: center;
+            z-index: 5;
+            font-size: 14px;
+            font-weight: bold;
+            &-light {
+              background-color: #ceecff;
+              color: #4da9e4;
+            }
+
+            &-dark {
+              background-color: #4da9e4;
+              color: $white;
+            }
+
+            &.left {
+              border-radius: 0 5px 5px 0;
+              left: 0;
+            }
+
+            &.right {
+              border-radius: 5px 0 0 5px;
+              right: 0;
+            }
+          }
+
+          .fast_view {
+            top: 30px;
+            position: absolute;
+            text-align: center;
+            z-index: 5;
+            font-size: 14px;
+            font-weight: bold;
+
+            &.left {
+              left: 5px;
+              picture {
+                margin-right: auto;
+              }
+            }
+
+            &.right {
+              right: 5px;
+              picture {
+                margin-left: auto;
+              }
+            }
+
+            picture {
+              width: 40px;
+              min-width: 40px;
+              min-height: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: $blue;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+            }
+
+            span {
+              margin-top: 5px;
+              color: #a1a1a1;
+              padding: 5px;
+              display: block;
+              background-color: #efefef;
+              border-radius: 10px;
+              font-size: 12px;
+              font-weight: 300;
+            }
           }
         }
         &--body {

@@ -8,6 +8,7 @@
 
 //UI:
 @import "UI/swiper";
+@import "UI/tooltipster";
 @import "UI/modals";
 @import "UI/fonts";
 @import "UI/default";
@@ -17,11 +18,14 @@
 @import "UI/radio";
 @import "UI/info-block-map";
 @import "UI/pagination";
+@import "UI/category";
+@import "UI/filtr";
 @import "UI/bad-review";
 @import "UI/bad-review-aside";
 @import "UI/delivery-block";
 @import "UI/hr-clouds.scss";
 @import "UI/choose";
+@import "UI/datepicker";
 //Components:
 @import "components/wrapper-page";
 @import "components/header";
@@ -37,5 +41,6 @@
 @import "components/pages/delivery";
 @import "components/pages/bucket";
 @import "components/pages/main";
+@import "components/pages/catalog";
 
 /* purgecss end ignore */

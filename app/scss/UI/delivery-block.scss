@@ -96,4 +96,26 @@
       background-color: darken($blue, 20%);
     }
   }
+
+  &.delivery_block-small {
+    @media (max-width: 640px) {
+      margin-bottom: 30px;
+    }
+    @media (min-width: 640px) {
+      &:before {
+        content: none;
+      }
+    }
+
+    @media (min-width: 960px) {
+      h2 {
+        margin-right: 0;
+        padding-right: 30px;
+        box-sizing: content-box;
+      }
+      .btn {
+        margin-left: calc((100% - 655px) + (655px / 3) - 30px);
+      }
+    }
+  }
 }
