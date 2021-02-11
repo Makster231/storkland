@@ -20,6 +20,7 @@
 @import "UI/bad-review";
 @import "UI/bad-review-aside";
 @import "UI/delivery-block";
+@import "UI/hr-clouds.scss";
 @import "UI/choose";
 //Components:
 @import "components/wrapper-page";
@@ -35,5 +36,6 @@
 @import "components/pages/contact";
 @import "components/pages/delivery";
 @import "components/pages/bucket";
+@import "components/pages/main";
 
 /* purgecss end ignore */

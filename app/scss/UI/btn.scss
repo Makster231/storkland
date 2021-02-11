@@ -12,7 +12,7 @@
   color: $white;
   text-align: center;
   border-radius: 25px;
-
+  text-decoration: none !important;
   &:hover {
     box-shadow: none;
     background-color: darken($red, 15%);
