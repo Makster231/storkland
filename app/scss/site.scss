@@ -18,6 +18,8 @@
 @import "UI/info-block-map";
 @import "UI/pagination";
 @import "UI/bad-review";
+@import "UI/bad-review-aside";
+@import "UI/delivery-block";
 @import "UI/choose";
 //Components:
 @import "components/wrapper-page";
@@ -32,5 +34,6 @@
 @import "components/pages/about";
 @import "components/pages/contact";
 @import "components/pages/delivery";
+@import "components/pages/bucket";
 
 /* purgecss end ignore */
