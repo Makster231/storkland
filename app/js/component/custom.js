@@ -33,6 +33,37 @@
             },
         })
     }
+    function bestArticlesSlider() {
+        
+        let count_of_slides = 1;
+
+        if($(window).width() > 640){
+            count_of_slides = 4;
+        }
+
+        var mySwiper = new Swiper('.swiper_articles-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: count_of_slides,
+            spaceBetween: 20,
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+
+
+        $(".js_swiper-left").on("click", function(){
+            $(this).closest(".article_title-bar").next().find(".swiper-button-prev").trigger("click");
+        })
+        $(".js_swiper-right").on("click", function(){
+            $(this).closest(".article_title-bar").next().find(".swiper-button-next").trigger("click");
+        })
+    }
+
+    
 
     function closeModal() {
         $.fancybox.close();
@@ -126,6 +157,8 @@
         ChooseSlides();
 
         burgerMenu();
+
+        bestArticlesSlider();
 
         activateTooltipster();
         
