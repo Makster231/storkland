@@ -911,7 +911,7 @@ a:hover { text-decoration: underline; }
 
 .choose_items-blocks { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
 
-.choose_items-blocks--item { width: 100%; max-width: 100%; padding: 24px 10px 17px; border-radius: 10px; margin-bottom: 27px; border: 1px solid #f5fbff; position: relative; background-color: #fff; transition: 0.3s ease; }
+.choose_items-blocks--item { width: 100%; max-width: 100%; padding: 24px 10px 17px; border-radius: 10px; margin-bottom: 27px; border: 2px solid #f5fbff; position: relative; background-color: #fff; transition: 0.3s ease; }
 
 .choose_items-blocks--item:hover { border-color: #5DC0FF; cursor: pointer; }
 
@@ -2572,9 +2572,16 @@ body.js_active_burger_menu .header_menu li a { padding-left: 24px; padding-right
 
 .product_card h4 { font-size: 16px; color: #4f5054; font-weight: bold; margin-bottom: 24px; line-height: 1.4; display: block; }
 
+@media (max-width: 640px) { .product_card .product_card-product--body_slider__text { flex-direction: column; }
+  .product_card .product_card-product--body_slider__text .btn { margin-left: 0; width: 100%; margin-top: 20px; margin-bottom: 20px; } }
+
 .product_card .product_card-product--body_slider .slider > ul { margin-left: 10px; display: flex; flex-direction: column; }
 
+@media (max-width: 640px) { .product_card .product_card-product--body_slider .slider > ul { margin-left: 0; flex-direction: row; justify-content: center; width: 100%; margin-bottom: 20px; } }
+
 .product_card .product_card-product--body_slider .slider > ul li { margin-bottom: 20px; width: 90px; height: 90px; border-radius: 15px; overflow: hidden; border: 1px solid #ababab; transition: 0.3s ease; cursor: pointer; order: 2; }
+
+@media (max-width: 640px) { .product_card .product_card-product--body_slider .slider > ul li { margin-bottom: 0; margin-left: 5px; width: 74px; height: 74px; } }
 
 .product_card .product_card-product--body_slider .slider > ul li img { border-radius: 15px; width: 100%; height: 100%; }
 
@@ -2582,13 +2589,17 @@ body.js_active_burger_menu .header_menu li a { padding-left: 24px; padding-right
 
 .product_card .product_card-product--body_slider .choose_items-blocks--item { max-width: 77%; margin-right: 0; padding: 45px 15px 10px; margin-bottom: 0; height: 410px; }
 
+@media (max-width: 640px) { .product_card .product_card-product--body_slider .choose_items-blocks--item { max-width: 100%; margin-bottom: 20px; height: 100%; } }
+
 .product_card .product_card-product--body_slider .choose_items-blocks--item .swiper-container, .product_card .product_card-product--body_slider .choose_items-blocks--item .swiper-wrapper, .product_card .product_card-product--body_slider .choose_items-blocks--item img, .product_card .product_card-product--body_slider .choose_items-blocks--item .choose_items-item--header { height: 100%; }
 
 .product_card .product_card-product--body_slider .choose_items-blocks--item .choose_items-item--header { margin-bottom: 0; }
 
 .product_card .product_card-product--body_slider .choose_items-blocks--item img { width: 100%; max-width: 100%; object-fit: contain; }
 
-.product_card-product--header a { margin-left: 30px; color: #5DC0FF; }
+.product_card-product--header a { margin-left: 30px; }
+
+@media (max-width: 640px) { .product_card-product--header a { margin-left: 0; width: 100%; text-align: center; margin-top: 15px; } }
 
 .product_card-product--header a.btn-back { margin-left: auto; position: relative; }
 
@@ -2598,13 +2609,30 @@ body.js_active_burger_menu .header_menu li a { padding-left: 24px; padding-right
 
 .product_card-product--body .col-5:last-of-type { max-width: calc(40% - 15px); margin-right: 0; }
 
+@media (max-width: 1168px) { .product_card-product--body .col-5 { max-width: calc(55% - 15px); }
+  .product_card-product--body .col-5:last-of-type { max-width: calc(45% - 15px); } }
+
+@media (max-width: 640px) { .product_card-product--body .col-5 { max-width: 100%; }
+  .product_card-product--body .col-5:last-of-type { max-width: 100%; } }
+
+@media (max-width: 640px) { .product_card-product--body .col-5 .product_card-product--body_content__header { flex-direction: column; } }
+
 .product_card-product--body .col-5 .product_card-product--body_content__header .column { width: 100%; max-width: calc(50% - 15px); }
+
+@media (max-width: 640px) { .product_card-product--body .col-5 .product_card-product--body_content__header .column { max-width: 100%; margin-left: 0 !important; }
+  .product_card-product--body .col-5 .product_card-product--body_content__header .column:first-of-type { margin-bottom: 20px; } }
 
 .product_card-product--body .col-5 .product_card-product--body_content__header .column .input-text, .product_card-product--body .col-5 .product_card-product--body_content__header .column .select-custom > li { font-size: 14px; border-radius: 15px; }
 
-.product_card-product--body .col-5 .product_card-product--body_content__header .column .input-text { height: 48px; line-height: 48px; }
+.product_card-product--body .col-5 .product_card-product--body_content__header .column .input-text { height: 48px; line-height: 1; }
+
+@media (max-width: 640px) { .product_card-product--body .col-5 .product_card-product--body_content__footer { flex-wrap: wrap; }
+  .product_card-product--body .col-5 .product_card-product--body_content__footer .btn { margin-left: auto; }
+  .product_card-product--body .col-5 .product_card-product--body_content__footer p { text-align: center; display: block; width: 100%; margin-top: 20px; } }
 
 .product_card-product--body .col-5 .product_card-product--body_content__footer .form-control { margin-right: 30px; }
+
+@media (max-width: 1168px) { .product_card-product--body .col-5 .product_card-product--body_content__footer .form-control { margin-right: 15px; } }
 
 .product_card-product--body .col-5 .product_card-product--body_content__footer .form-control input { width: 48px; height: 48px; }
 
@@ -2646,6 +2674,12 @@ body.js_active_burger_menu .header_menu li a { padding-left: 24px; padding-right
 
 .product_card-review .col-6 .progressbar { margin: 0 15px; }
 
+@media (max-width: 640px) { .product_card-review .col-6 .progressbar { order: 2; margin: 10px 0 30px 0; } }
+
+@media (max-width: 640px) { .product_card-review .col-6 .row { flex-wrap: wrap; }
+  .product_card-review .col-6 p { order: 1; }
+  .product_card-review .col-6 p.text-bold { margin-left: 10px; } }
+
 .product_card-review--list { margin-bottom: 30px; }
 
 .product_card-review--list_item { padding-top: 28px; padding-bottom: 28px; display: block; width: 100%; border-bottom: 1px solid #ababab; }
@@ -2684,7 +2718,11 @@ body.js_active_burger_menu .header_menu li a { padding-left: 24px; padding-right
 
 .product_card-info--item.product_card-info--item_character ul li:last-of-type { border-bottom: 0; }
 
+@media (max-width: 640px) { .product_card-info--item.product_card-info--item_way { flex-direction: column; } }
+
 .product_card-info--item.product_card-info--item_way img { margin-right: 65px; }
+
+@media (max-width: 640px) { .product_card-info--item.product_card-info--item_way img { margin-right: 0; margin-bottom: 20px; } }
 
 .product_card-info--item.product_card-info--item_delivery img, .product_card-info--item.product_card-info--item_extra img { margin-right: 6px; width: 14px; height: 14px; }
 
