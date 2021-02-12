@@ -27,6 +27,10 @@
 .text-bold {
   font-weight: bold;
 }
+.column {
+  flex-direction: column;
+  display: flex;
+}
 
 .column-mob {
   @media (max-width: 640px) {

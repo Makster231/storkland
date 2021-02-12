@@ -103,6 +103,22 @@
     });
   }
 
+  function inputTypeFile() {
+    $(".js_icon-file").on("click", function () {
+      $(this).closest(".js_input-file").find("input").trigger("click");
+    });
+    $("input[type=file]").on("input", function () {
+      var $this = $(this);
+      var $wrapper = $this.closest(".js_input-file");
+      $wrapper.find("input").trigger("click");
+
+      if ($wrapper.find("input").val() !== "") {
+        var value = $wrapper.find("input").val().split("\\")[$wrapper.find("input").val().split("\\").length - 1];
+        $wrapper.find("p").text(value);
+      }
+    });
+  }
+
   $(function () {
     //show content after loaded page
     $("body").css("opacity", "1");
@@ -116,6 +132,7 @@
     activateTooltipster();
     openDatePicker();
     asideCategory();
+    inputTypeFile();
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map
