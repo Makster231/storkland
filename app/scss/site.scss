@@ -27,6 +27,7 @@
 @import "UI/choose";
 @import "UI/why-we";
 @import "UI/datepicker";
+@import "UI/progressbar";
 //Components:
 @import "components/wrapper-page";
 @import "components/header";
@@ -45,5 +46,6 @@
 @import "components/pages/catalog";
 @import "components/pages/reviews";
 @import "components/pages/article";
+@import "components/pages/product-card";
 
 /* purgecss end ignore */

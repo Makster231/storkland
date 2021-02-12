@@ -45,7 +45,7 @@
     });
   }
 
-  function bestArticlesSlider() {
+  function articlesBestSlider() {
     var count_of_slides = 1;
 
     if ($(window).width() > 640) {
@@ -69,6 +69,40 @@
     });
     $(".js_swiper-right").on("click", function () {
       $(this).closest(".article_title-bar").next().find(".swiper-button-next").trigger("click");
+    });
+  }
+
+  function productCardRecent() {
+    var count_of_slides = 1;
+
+    if ($(window).width() > 640) {
+      count_of_slides = 3;
+    }
+
+    var mySwiper = new Swiper('.swiper_product-card--container', {
+      // Optional parameters
+      direction: 'horizontal',
+      slidesPerView: count_of_slides,
+      spaceBetween: 20,
+      loop: true,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next-card',
+        prevEl: '.swiper-button-prev-card'
+      }
+    });
+    mySwiper.on('slideChangeTransitionEnd', function () {
+      if ($('.js_product_card-product--body_slider').length) {
+        $('.js_product_card-product--body_slider__small li').removeClass("js_active");
+        var slider_big_index = $(".js_product_card-product--body_slider .swiper-slide-active").index();
+        $(".js_product_card-product--body_slider__small li:eq(" + slider_big_index + ")").addClass("js_active");
+      }
+    });
+    $(".js_swiper-left").on("click", function () {
+      $(".swiper-button-prev-card").trigger("click");
+    });
+    $(".js_swiper-right").on("click", function () {
+      $(".swiper-button-next-card").trigger("click");
     });
   }
 
@@ -156,11 +190,12 @@
     });
     ChooseSlides();
     burgerMenu();
-    bestArticlesSlider();
+    articlesBestSlider();
     activateTooltipster();
     openDatePicker();
     asideCategory();
     inputTypeFile();
+    productCardRecent();
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map

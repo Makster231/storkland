@@ -493,6 +493,18 @@ a:hover {
   text-decoration: none;
 }
 
-a{
+a {
   text-decoration: none;
+}
+
+input[type="date"] {
+  padding: 16px;
+
+  &::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(../../images/icon-date-active.png) no-repeat center !important;
+    cursor: pointer;
+    background-size: contain;
+  }
 }

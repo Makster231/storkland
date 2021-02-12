@@ -14,6 +14,9 @@
 .js_hidden {
   display: none !important;
 }
+.mr-auto {
+  margin-right: auto;
+}
 
 .row {
   display: flex;
@@ -88,4 +91,36 @@
 
 .mb-4 {
   margin-bottom: 32px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.ml-4 {
+  margin-left: 32px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ml-1 {
+  margin-left: 8px;
+}
+
+.text-blue {
+  color: $blue;
 }
