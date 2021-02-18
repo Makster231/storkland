@@ -490,11 +490,11 @@ label {
 
 a:hover {
   color: none;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 input[type="date"] {

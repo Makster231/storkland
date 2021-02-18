@@ -1,6 +1,6 @@
 .hr_clouds {
   height: 100px;
-  margin-top: 50px;
+  margin-top: 30px;
   background-image: url(../../images/hr-clouds.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -10,6 +10,10 @@
     background-position: center top;
   }
   @media (min-width: 960px) {
+    height: 195px;
+  }
+  @media (min-width: 1660px) {
+    margin-top: 50px;
     height: 245px;
   }
 }

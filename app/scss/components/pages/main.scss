@@ -439,8 +439,6 @@
     }
   }
 
-  
-
   &_reviews {
     h2 {
       margin-bottom: 50px;
@@ -790,9 +788,39 @@
 
   .header_content {
     max-width: 480px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: -1000px;
+      bottom: -85px;
+      width: 1086px;
+      height: 592px;
+      background: url(../../images/main_header_components.png) center no-repeat;
+      z-index: 0;
+    }
+    @media (max-width: 1168px) {
+      &:before {
+        right: -900px;
+      }
+    }
     @media (max-width: 960px) {
       max-width: 100%;
       text-align: center;
+      &:before {
+        transform: scale(0.5);
+        right: -450px;
+        bottom: -350px;
+        z-index: -1;
+      }
+    }
+    @media (max-width: 640px) {
+      &:before {
+        transform: scale(0.35);
+        right: -475px;
+        bottom: -405px;
+      }
     }
 
     h2 {

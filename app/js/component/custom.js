@@ -15,6 +15,15 @@
                 clickable: true
             },
         })
+        
+        
+        mySwiper[0].on('slideChangeTransitionEnd', function() {
+            if($('.js_product_card-product--body_slider').length){
+                $('.js_product_card-product--body_slider__small li').removeClass("js_active");
+                let slider_big_index = $(`.js_product_card-product--body_slider .swiper-slide-active`).index() - 1;
+                $(".js_product_card-product--body_slider__small li:eq("+ slider_big_index  +")").addClass("js_active");
+            }
+        })
     };
 
     function modalSlider() {
@@ -101,7 +110,30 @@
         })
     }
 
-    
+    function productCardSliderSmall(){
+        $(".js_product_card-product--body_slider__small li").on("click", function(){
+            $(".js_product_card-product--body_slider__small li").removeClass("js_active");
+
+            $(this).addClass("js_active");
+
+            $(".swiper-pagination-bullet:eq(" + $(this).index() + ")").trigger("click");
+        })
+    }
+
+    function triggerCountOfProduct(){
+        $(".js_product_card-count--plus").on("click", function(){
+            let input_val = +$(this).closest(".js_product_card-product--body_content__footer").find("input[type=number]").val();
+            input_val++;
+            $(this).closest(".js_product_card-product--body_content__footer").find("input[type=number]").val(input_val);
+        })
+        $(".js_product_card-count--minus").on("click", function(){
+            let input_val = +$(this).closest(".js_product_card-product--body_content__footer").find("input[type=number]").val();
+            if(input_val > 1){
+                input_val--;
+                $(this).closest(".js_product_card-product--body_content__footer").find("input[type=number]").val(input_val);
+            }
+        })
+    }
 
     function closeModal() {
         $.fancybox.close();
@@ -207,5 +239,9 @@
         inputTypeFile();
 
         productCardRecent();
+
+        productCardSliderSmall();
+
+        triggerCountOfProduct();
     });
 })(window.jQuery, window, document);
